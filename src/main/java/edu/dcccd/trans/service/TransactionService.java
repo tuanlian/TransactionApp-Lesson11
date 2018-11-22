@@ -1,4 +1,11 @@
 package edu.dcccd.trans.service;
 
-public class TransactionService {
+import edu.dcccd.trans.entity.Transaction;
+
+public interface TransactionService
+{
+    String createTransaction(Transaction transaction);
+    Iterable<Transaction> getAllTransaction();
 }
+
+
