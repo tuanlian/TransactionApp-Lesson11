@@ -12,7 +12,6 @@ public class Role {
     private String role;
     @Column(name = "user_id")
     private Long userId;
-
     public Role(String role, Long userId) {
         this.role = role;
         this.userId = userId;

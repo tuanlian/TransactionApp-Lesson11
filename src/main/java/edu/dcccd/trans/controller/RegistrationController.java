@@ -1,5 +1,4 @@
 package edu.dcccd.trans.controller;
-
 import edu.dcccd.trans.entity.RegistrationForm;
 import edu.dcccd.trans.entity.Role;
 import edu.dcccd.trans.entity.User;

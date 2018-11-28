@@ -34,8 +34,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("/", "/login", "/logout", "/register").permitAll();
         // /transaction page requires login as ROLE_USER or ROLE_ADMIN.
         // If no login, it will redirect to /login page.
-        http.authorizeRequests().antMatchers("/transaction").access
-        ("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')");
+        http.authorizeRequests().antMatchers("/transaction").access("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')");
         // For ADMIN only.
         http.authorizeRequests().antMatchers("/h2-console/**").access("hasRole('ROLE_ADMIN')");
         // When the user has logged in as XX.
