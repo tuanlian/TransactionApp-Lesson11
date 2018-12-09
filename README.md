@@ -1,1 +1,1 @@
-# TransactionApp - Lesson 12 - Spring Data
+# TransactionApp - Lesson 14 - Spring REST Services
